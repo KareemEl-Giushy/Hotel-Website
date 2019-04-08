@@ -1,1 +1,1 @@
-# Hotel-Website My first complete project
+# Hotel-Website My first completed project
