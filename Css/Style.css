@@ -1,0 +1,453 @@
+/*///"Indie Flower", "Righteous", "Droid Sans"*/
+/*-webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;*/
+ /*	color:#34FF81;
+	background-color:rgb(255,252,254);*/
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	perspective: 1000px;
+	-webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cont{
+	width:1000px;
+	margin:auto;
+	overflow:hidden;
+}
+.slider img{
+	width:100%;
+	height: 600px;
+}
+.slider .buttons{
+	position: absolute;
+	top: 3%;
+	left: 32%;
+	color:#fff;
+	font-family:"Indie Flower",serif;
+}
+.buttons h1{
+	text-align: center;
+	font-size: 50px;
+	cursor: pointer;
+	animation: thetitle 3s ease 0s 1 normal none running;
+}
+.buttons .text{
+	display: block;
+	background-color: transparent;
+	color: white;
+	border: 3px solid;
+	width: 500px;
+	height: 60px;
+	font-size: 35px;
+}
+.text::placeholder{
+	color:#fff;
+	font-size: 25px;
+	text-align: center;
+	opacity: .8;
+	text-transform: capitalize;
+}
+.buttons button{
+	margin-top: 10px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	width: 460px;
+	height: 50px;
+	font-size: 40px;
+	position: relative;
+	left: 20px;
+	cursor: pointer;
+}
+.header .navbar h2 , .header .navbar ul , .maint .tabs{
+	cursor:pointer;
+}
+/* Start Header css */
+.header .slider{
+	height:600px;
+	background-color:#fff;
+}
+.header .navbar{
+	height:89.9px;
+	background-color:#252e30;
+	color:#fff;
+	overflow:hidden;
+}
+.header .navbar  h2 span{
+	color:#2ba35e;
+}
+.header .navbar  h2{
+	font-family:"Indie Flower",serif;
+	float:right;
+	margin-right:100px;
+	margin-top:25px;
+	font-size:250%;
+	text-transform:uppercase;
+}
+.header .navbar ul{
+	list-style:none;
+	padding-left:0;
+	margin-top:25px;
+}
+.header .navbar li{
+	float: left;
+	padding:10px;
+	font-family:"Righteous", cursive;
+	font-size:130%;
+	height: 100px;
+	text-transform: capitalize;
+	transition: all 1s ease;
+}
+.header .navbar li:hover{
+	color:#34FF81;
+	background-color:rgb(255,252,254);
+}
+/* End header*/
+/*------------------------------------------*/
+/*Start fet*/
+.cont .fet {
+	margin-top:80px;
+	float:left;
+	width:33.333%;
+	text-align: center;
+}
+.cont .tran{
+	height:300px;
+}
+.cont .fet span{
+	color:#3DB05A;
+	margin:35px;
+	font-size:215%;
+	font-family:Righteous , serif;
+	text-transform:uppercase;
+}
+.cont .fet p{
+	text-indent:10px;
+	text-align:center;
+	line-height: 1.8;
+	font-family:'Droid Sans', sans-serif;
+	font-size:125%;
+	text-transform: capitalize;
+}
+.cont .fet #p{
+	margin-right: -50px;
+}
+/*End fet*/
+/*-------------------------------------------*/
+/*Start Tabs*/
+.maint{
+	display:block;
+	width:1000px;
+	height:615px;
+	background-color:#fff;
+}
+.navy{
+	height: 70px;
+	background-color: #252e30;
+	overflow:hidden;
+	border-radius: 35%;
+}
+.maint .tabs{
+	float: left;
+	list-style: none;
+	text-align: center;
+	text-transform: capitalize;
+	margin-left: 246px;
+	overflow:hidden;
+}
+.tabs li{
+	float: left;
+	text-align: center;
+	margin: -7px 10px 30px 23px;
+	font-size: 170%;
+	font-family:"Righteous", cursive, Arial;
+	color: #fff;
+	height: 100px;
+	padding: 10px;
+	transition: all 1s ease;
+}
+.tabs li:hover{
+	color:#34FF81;
+	background-color:rgb(255,252,254);
+}
+.defultab .defult{
+	color:#34FF81;
+	background-color:rgb(255,252,254);
+}
+/*End Tabs*/
+/*Start Cards*/
+.carda{
+	width: 365px;
+	height:50px;
+	position: relative;
+	transform-style: preserve-3d;
+	margin: 20px;
+	transition: all 1s ease;
+}
+.cardd{
+	width: 365px;
+	height:50px;
+	position: relative;
+	left: 590px;
+	bottom: 70px;
+	transform-style: preserve-3d;
+	margin: 20px;
+	transition: all 1s ease;
+}
+.frist-card img , .second-card img{
+	margin: 25px;
+	border: 1.5px solid #252e30;
+	border-radius: 5%;
+	width: 300px;
+	height:300px;
+}
+.frist-card h2 , .second-card h2{
+	margin-top: -25px;
+	margin-left: 100px;
+	font-family: "Indie Flower", Arial;
+}
+.frist-card p , .second-card p{
+	margin-top: -20px;
+	margin-left: 67px;
+	font-family: "Droid Sans", Arial;
+}
+.frist-card , .second-card{
+	width:356px;
+	height: 395.91px;
+	border: 3px solid #252e30;
+	border-radius: 5%;
+	position: absolute;
+	background-color: #fff;
+	z-index: 2;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.frist-back , .second-back {
+	position: absolute;
+	border: 3px solid #252e30;
+	border-radius: 5%;
+	width:356px;
+	height: 395.91px;
+	background-color: #fff;
+	z-index: 1;
+	transform: rotateY(180deg);
+}
+.cards .carda:hover{
+	transform: rotateY(180deg);
+}
+.cards .cardd:hover{
+	transform: rotateY(180deg);
+}
+/*End Cards*/
+/*Call Us*/
+.comm{
+	width: 100%;
+	height:500px;
+	background-color: #252e30;
+	margin-top: 50px;
+}
+/*End Call Us*/
+/*The Back Face*/
+.frist-back , .second-back{
+	text-align: center;
+	text-transform: capitalize;
+	color: #252e30;
+
+}
+.frist-back h2 , .second-back h2{
+	margin-top: 45px;
+	font-family: "Indie Flower", Arial;
+}
+.frist-back p , .second-back p{
+	line-height: 2;
+	font-family: "Droid Sans", Arial;
+}
+.frist-back button , .second-back button{
+	margin-top: 70px;
+	border: 1px solid #3498db;
+	border-radius: 3%;
+	color: #3498db;
+	background-color: #fff;
+	width: 210px;
+	height: 50px;
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+.frist-back button:hover , .second-back button:hover{
+	background-color: #3498db;
+	color: #fff;
+}
+/*Booking Bar*/
+.booking-hid{
+	position:absolute;
+	left:36%;
+	top:60%;
+	text-transform:capitalize;
+	text-align:center;
+	opacity:0;
+}
+.booking-show{
+	position:absolute;
+	left:40%;
+	top:52%;
+	text-transform:capitalize;
+	text-align:center;
+	opacity:1;
+	transition:opacity 1s ease;
+}
+.fonty{
+	color: rgb(37, 46, 48);
+    font-family: arial;
+    font-size: 30px;
+		line-height: 2;
+}
+/*Start The comunication bar*/
+.comm img{
+	height:477px;
+	width:435px;
+	margin:10px;
+	border-radius:5%;
+	opacity: .5;
+	transition:all 1s ease;
+}
+.comm img:hover{
+	opacity:1;
+}
+.comm .sub{
+	float: right;
+	margin: 10px;
+	margin-top:35px;
+	padding: 10px;
+	line-height:3;
+}
+.sub label{
+	color:#FFF;
+	font-family: "Droid Sans", Arial;
+	float:left;
+}
+.comm .sub .emaild{
+	width: 300px;
+    height: 30px;
+    border: 1px solid #000;
+    background-color: #2c3e50;
+	color:#fff;
+	padding:10px;
+	margin-left: 20px;
+}
+.comm .sub textarea{
+	display:block;
+	height:220px;
+	width:650px;
+	resize: none;
+	border: 1px solid #000;
+	border-radius: 0%;
+	background-color: rgba(44, 62, 80,1.0);
+	font-size: 25px;
+	color:#fff;
+}
+.sub button{
+	width: 200px;
+    height: 40px;
+	text-align:center;
+    float:right;
+	margin-top: 25px;
+    background-color: #7f8c8d;
+    border: 1px solid #95a5a6;
+    color: #FFF;
+	font-weight:bold;
+	transition:all 1s;
+}
+.sub button:hover , .play:hover{
+	background-color:#ecf0f1;
+	color:#16a085;
+}
+.play{
+	width: 200px;
+    height: 40px;
+	text-align:center;
+    float:left;
+	margin-top: 25px;
+    background-color: #7f8c8d;
+    border: 1px solid #95a5a6;
+    color: #FFF;
+	font-weight:bold;
+	transition:all 1s;
+}
+#thanks{
+	color: #fff;
+	position: absolute;
+	bottom: 65px;
+	right: 124px;
+	font-size: 25px;
+	margin: auto;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial;
+	display: none;
+	cursor: context-menu;
+}
+/*End The Comunication bar*/
+/*copyright*/
+.copy{
+	background-color: #252e30;
+	color: #fff;
+	width: 50%;
+	height: 35px;
+	position: absolute;
+	bottom: 0px;
+	right: 15%;
+	font-size: 26px;
+	margin: auto;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial;
+	border-top-right-radius: 110%;
+	border-top-left-radius: 110%;
+	transition: all .5s ease;
+	cursor: context-menu;
+}
+.copy:hover{
+	height: 55px;
+}
+/*copyright*/
+/*Buttons Animation*/
+.hid{
+	opacity:0;
+	transition:all 1s ease;
+}
+.show{
+	opacity:1;
+	transition:all 1s ease;
+}
+.non{
+	background-color:#252e30;
+	color:#FFF;
+}
+.chan{
+	background-color:#fff;
+	color:#34FF81;
+}
+/*The Animation*/
+@keyframes thetitle{
+	0%{
+		color:#d35400;
+		transform:scale(2);
+	}
+	to{
+		color:#FFF;
+		transform:scale(1);
+	}
+}
